@@ -1,0 +1,92 @@
+[
+  {
+    "name": "listing_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "ID unik listing Airbnb yang diekstrak dari URL tautan"
+  },
+  {
+    "name": "nama",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Nama lengkap listing akomodasi pada platform Airbnb"
+  },
+  {
+    "name": "tipe_properti",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Tipe akomodasi (Home, Apartment, Hotel, Guesthouse, Villa, dll.)"
+  },
+  {
+    "name": "lokasi_spesifik",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Lokasi spesifik, nama kecamatan, atau area properti"
+  },
+  {
+    "name": "judul_listing",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Judul deskriptif properti hasil parsing nama"
+  },
+  {
+    "name": "kabupaten_kota",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Nama resmi kabupaten atau kota di Provinsi Lampung"
+  },
+  {
+    "name": "wilayah_fokus",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Klasifikasi komparasi: Kabupaten Lampung Tengah vs Kabupaten/Kota Lain (Lampung)"
+  },
+  {
+    "name": "harga",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Harga sewa menginap per malam dalam mata uang Rupiah (IDR)"
+  },
+  {
+    "name": "rating",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Skor rating ulasan pengguna Airbnb (skala 1.0 - 5.0)"
+  },
+  {
+    "name": "rating_kategori",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Kategori performa ulasan listing akomodasi"
+  },
+  {
+    "name": "is_new_listing",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Penanda listing berstatus baru (New di Airbnb)"
+  },
+  {
+    "name": "jumlah_review",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Jumlah ulasan tamu yang diterima listing"
+  },
+  {
+    "name": "has_reviews",
+    "type": "BOOL",
+    "mode": "REQUIRED",
+    "description": "Penanda apakah listing telah memiliki ulasan tamu"
+  },
+  {
+    "name": "price_tier",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Segmentasi tarif sewa berbasis kuartil: Budget, Mid-Range, Premium"
+  },
+  {
+    "name": "link",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Tautan URL langsung menuju halaman listing di situs Airbnb"
+  }
+]
